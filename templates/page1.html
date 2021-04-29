@@ -3,14 +3,11 @@
 {% block title %}Page 1: Name{% endblock %}
 
 {% block content %}
-  <h1>Page 1: What is your name?</h1>
+  <h1>Page 1: Which country made the first declaration of war that sparked World War One</h1>
 
  <form action={{ url_for("renderPage2") }} method="POST">
-  First name:<br>
-  <input type="text" name="firstName">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastName">
+  Answer:<br>
+  <input type="text" name="firstDeclarationCountry">
   <input type="submit" value="Submit">
  </form> 
 
